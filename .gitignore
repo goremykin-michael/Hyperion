@@ -1,0 +1,17 @@
+*.pdb
+*.obj
+*.log
+*.tlog
+*.idb
+*.suo
+*.user
+*.manifest
+*.manifest.res
+*.unsuccessfulbuild
+*.lastbuildstate
+*.exp
+*.ilk
+*_manifest.rc
+*.ipch
+*.sdf
+*.cache

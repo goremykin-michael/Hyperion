@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\dllmain.cpp">
+      <Filter>HyperionCheckService</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\HyperionCheckService.cpp">
+      <Filter>HyperionCheckService</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="HyperionCheckService">
+      <UniqueIdentifier>{aeb42e32-afcd-4f82-9044-bd24440378a3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

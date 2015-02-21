@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Hyperion">
+      <UniqueIdentifier>{9f6ebd65-34cc-47e2-9a23-723a1bf8dbe3}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Hyperion\Hyperion.cpp">
+      <Filter>Hyperion</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

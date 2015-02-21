@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Hyperion", "Hyperion\Hyperion.vcxproj", "{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HyperionStyleChecker", "HyperionStyleChecker\HyperionStyleChecker.vcxproj", "{8920387F-FABB-4F35-B2C7-ACE02570EE3B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HyperionCheckService", "HyperionCheckService\HyperionCheckService.vcxproj", "{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HyperionDevelopmentConsole", "HyperionDevelopmentConsole\HyperionDevelopmentConsole.vcxproj", "{148CB977-5C43-49CA-AF56-66DF38786D4E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Debug|Win32.Build.0 = Debug|Win32
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Debug|x64.ActiveCfg = Debug|x64
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Debug|x64.Build.0 = Debug|x64
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Release|Win32.ActiveCfg = Release|Win32
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Release|Win32.Build.0 = Release|Win32
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Release|x64.ActiveCfg = Release|x64
+		{1E2414F1-F07D-408C-8BB8-3BD2593AE5CA}.Release|x64.Build.0 = Release|x64
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Debug|Win32.Build.0 = Debug|Win32
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Debug|x64.ActiveCfg = Debug|x64
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Debug|x64.Build.0 = Debug|x64
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Release|Win32.ActiveCfg = Release|Win32
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Release|Win32.Build.0 = Release|Win32
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Release|x64.ActiveCfg = Release|x64
+		{8920387F-FABB-4F35-B2C7-ACE02570EE3B}.Release|x64.Build.0 = Release|x64
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Debug|Win32.Build.0 = Debug|Win32
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Debug|x64.ActiveCfg = Debug|x64
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Debug|x64.Build.0 = Debug|x64
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Release|Win32.ActiveCfg = Release|Win32
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Release|Win32.Build.0 = Release|Win32
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Release|x64.ActiveCfg = Release|x64
+		{9CF1ADEF-6A12-4B3A-A9B2-5E32F201CE3E}.Release|x64.Build.0 = Release|x64
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Debug|Win32.ActiveCfg = Debug|Win32
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Debug|Win32.Build.0 = Debug|Win32
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Debug|x64.ActiveCfg = Debug|x64
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Debug|x64.Build.0 = Debug|x64
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Release|Win32.ActiveCfg = Release|Win32
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Release|Win32.Build.0 = Release|Win32
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Release|x64.ActiveCfg = Release|x64
+		{148CB977-5C43-49CA-AF56-66DF38786D4E}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
