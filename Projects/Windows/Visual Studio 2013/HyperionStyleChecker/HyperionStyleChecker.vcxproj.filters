@@ -4,6 +4,9 @@
     <Filter Include="HyperionStyleChecker">
       <UniqueIdentifier>{fb53a523-9042-413a-8efa-c179a7cc7c3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HyperionStyleChecker\DOM">
+      <UniqueIdentifier>{4f8f91a1-bc4a-407e-b051-e6eb38c1e060}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\dllmain.cpp">
@@ -12,5 +15,10 @@
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\HyperionStyleChecker.cpp">
       <Filter>HyperionStyleChecker</Filter>
     </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\Source.h">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

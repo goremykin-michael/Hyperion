@@ -22,6 +22,9 @@
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\dllmain.cpp" />
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\HyperionStyleChecker.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\Source.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{8920387F-FABB-4F35-B2C7-ACE02570EE3B}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -74,21 +77,27 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <LibraryPath>..\..\..\..\Source\ThirdParty\clang\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <LibraryPath>..\..\..\..\Source\ThirdParty\clang\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -112,6 +121,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>clangAnalysis.lib;clangAST.lib;clangBasic.lib;clangDriver.lib;clangEdit.lib;clangFrontend.lib;clangLex.lib;clangParse.lib;clangSema.lib;clangSerialization.lib;LLVMBitReader.lib;LLVMBitWriter.lib;LLVMCore.lib;LLVMMC.lib;LLVMMCParser.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -144,6 +154,7 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>clangAnalysis.lib;clangAST.lib;clangBasic.lib;clangDriver.lib;clangEdit.lib;clangFrontend.lib;clangLex.lib;clangParse.lib;clangSema.lib;clangSerialization.lib;LLVMBitReader.lib;LLVMBitWriter.lib;LLVMCore.lib;LLVMMC.lib;LLVMMCParser.lib;LLVMSupport.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
