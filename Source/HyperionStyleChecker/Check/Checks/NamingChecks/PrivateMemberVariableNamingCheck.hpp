@@ -1,24 +1,21 @@
 #pragma once
-#include <Core/Common/HnIncludes.h>
-#include <Core/Text/HnString.h>
-#include <Checker/CPlusPlus/Check/Checks/HnICheck.h>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
-	class HnPrivateMemberVariableNamingCheck : public HnICheck
+	class PrivateMemberVariableNamingCheck : public ICheck
 	{
 	public:
-		HnPrivateMemberVariableNamingCheck() {}
-		virtual ~HnPrivateMemberVariableNamingCheck() {}
+		PrivateMemberVariableNamingCheck() {}
+		virtual ~PrivateMemberVariableNamingCheck() {}
 
-		virtual HnString GetName()
+		virtual String GetName()
 		{
 			return "Private Member Variable Naming Check";
 		};
 
-		virtual HnCheckResult Check(const HnParsedFile * cpParsedFile)
+		virtual CheckResult Check(const ParsedFile * cpParsedFile)
 		{
-			HnCheckResult checkResult;
+			CheckResult checkResult;
 			checkResult.sCheckName = GetName();
 			checkResult.bIsOk = true;
 

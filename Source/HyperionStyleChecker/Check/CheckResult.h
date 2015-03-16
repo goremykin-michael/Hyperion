@@ -1,18 +1,16 @@
 #pragma once
-#include <Core/Common/HnIncludes.h>
-#include <Core/Text/HnString.h>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
-	class HnCheckResult
+	class CheckResult
 	{
 	public:
-		HnCheckResult() {}
-		~HnCheckResult() {}
+		CheckResult() {}
+		~CheckResult() {}
 
-		HnString sCheckName;
+		string sCheckName;
 
 		bool bIsOk;
-		HnString sWhat;
+		string sWhat;
 	};
 }

@@ -23,6 +23,21 @@
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\HyperionStyleChecker.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckResult.h" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\ClassDeclarationGroupingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\DefineGroupingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\IncludeGroupingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\UsingGroupingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\ICheck.h" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\ClassNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\FunctionNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\GlobalVariableNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\MemberFunctionNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\PrivateMemberVariableNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\ProtectedMemberVariableNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\PublicMemberVariableNamingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\SpacingChecks\FunctionBracesSpacingCheck.hpp" />
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\SpacingChecks\FunctionBracketsSpacingCheck.hpp" />
     <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\Source.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
@@ -83,7 +98,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty;..\..\..\..\Source</IncludePath>
     <LibraryPath>..\..\..\..\Source\ThirdParty\clang\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -96,7 +111,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty;..\..\..\..\Source</IncludePath>
     <LibraryPath>..\..\..\..\Source\ThirdParty\clang\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">

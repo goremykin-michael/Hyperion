@@ -7,6 +7,21 @@
     <Filter Include="HyperionStyleChecker\DOM">
       <UniqueIdentifier>{4f8f91a1-bc4a-407e-b051-e6eb38c1e060}</UniqueIdentifier>
     </Filter>
+    <Filter Include="HyperionStyleChecker\Check">
+      <UniqueIdentifier>{236a8ae6-3d32-4967-8725-8b40662bfa27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Check\Checks">
+      <UniqueIdentifier>{bd10b7d7-78b3-42bf-9615-e8a2589710d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Check\Checks\BlockingChecks">
+      <UniqueIdentifier>{c0151080-4161-4a35-bae5-3278987395ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Check\Checks\NamingChecks">
+      <UniqueIdentifier>{d0523f36-231e-4e49-9579-2c1ae3e6c208}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Check\Checks\SpacingChecks">
+      <UniqueIdentifier>{03b4f9c8-b868-43c3-af8a-36af77fb4b28}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\dllmain.cpp">
@@ -19,6 +34,51 @@
   <ItemGroup>
     <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\Source.h">
       <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\ICheck.h">
+      <Filter>HyperionStyleChecker\Check\Checks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckResult.h">
+      <Filter>HyperionStyleChecker\Check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\ClassDeclarationGroupingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\BlockingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\DefineGroupingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\BlockingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\IncludeGroupingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\BlockingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\UsingGroupingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\BlockingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\ClassNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\FunctionNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\GlobalVariableNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\MemberFunctionNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\PrivateMemberVariableNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\ProtectedMemberVariableNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\NamingChecks\PublicMemberVariableNamingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\NamingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\SpacingChecks\FunctionBracesSpacingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\SpacingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\SpacingChecks\FunctionBracketsSpacingCheck.hpp">
+      <Filter>HyperionStyleChecker\Check\Checks\SpacingChecks</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
