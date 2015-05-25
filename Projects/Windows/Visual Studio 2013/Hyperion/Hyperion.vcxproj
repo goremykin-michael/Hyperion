@@ -76,7 +76,7 @@
     <LinkIncremental>true</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty;..\..\..\..\Source;</IncludePath>
     <LibraryPath>..\..\..\..\Source\ThirdParty\tbb\lib\intel64\vc12;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -89,7 +89,7 @@
     <LinkIncremental>false</LinkIncremental>
     <OutDir>..\..\..\..\Build\Binary\$(PlatformShortName)\$(Configuration)\</OutDir>
     <IntDir>..\..\..\..\Build\Objects\$(PlatformShortName)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty</IncludePath>
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);..\..\..\..\Source\ThirdParty;..\..\..\..\Source;</IncludePath>
     <LibraryPath>..\..\..\..\Source\ThirdParty\tbb\lib\intel64\vc12;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -157,7 +157,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\LoadedModule.cpp" />
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\ModuleManager.cpp" />
     <ClCompile Include="..\..\..\..\Source\Hyperion\Hyperion.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModule.h" />
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModuleManager.h" />
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\LoadedModule.h" />
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\ModuleManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

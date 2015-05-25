@@ -4,42 +4,123 @@
     <Filter Include="HyperionStyleChecker">
       <UniqueIdentifier>{fb53a523-9042-413a-8efa-c179a7cc7c3c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="HyperionStyleChecker\DOM">
-      <UniqueIdentifier>{4f8f91a1-bc4a-407e-b051-e6eb38c1e060}</UniqueIdentifier>
-    </Filter>
     <Filter Include="HyperionStyleChecker\Check">
-      <UniqueIdentifier>{236a8ae6-3d32-4967-8725-8b40662bfa27}</UniqueIdentifier>
+      <UniqueIdentifier>{5c6dbf42-4533-41a6-bcf6-1f459f6aee89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\DOM">
+      <UniqueIdentifier>{c977843f-96d8-4b66-a827-14e90adfb259}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Main">
+      <UniqueIdentifier>{696d29aa-7b36-40f7-a2d1-dc4e6039fb25}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\DOM\AST">
+      <UniqueIdentifier>{ed0090fc-22a0-4c5b-9670-873eb4f18118}</UniqueIdentifier>
     </Filter>
     <Filter Include="HyperionStyleChecker\Check\Checks">
-      <UniqueIdentifier>{bd10b7d7-78b3-42bf-9615-e8a2589710d4}</UniqueIdentifier>
+      <UniqueIdentifier>{c5fe12ed-6128-40e2-83b0-4bf6425a3321}</UniqueIdentifier>
     </Filter>
     <Filter Include="HyperionStyleChecker\Check\Checks\BlockingChecks">
-      <UniqueIdentifier>{c0151080-4161-4a35-bae5-3278987395ef}</UniqueIdentifier>
+      <UniqueIdentifier>{5dbc2683-2765-47b6-88e3-3d4f67902d7a}</UniqueIdentifier>
     </Filter>
     <Filter Include="HyperionStyleChecker\Check\Checks\NamingChecks">
-      <UniqueIdentifier>{d0523f36-231e-4e49-9579-2c1ae3e6c208}</UniqueIdentifier>
+      <UniqueIdentifier>{ffa9e8f1-6587-4793-a33c-febdb6421763}</UniqueIdentifier>
     </Filter>
     <Filter Include="HyperionStyleChecker\Check\Checks\SpacingChecks">
-      <UniqueIdentifier>{03b4f9c8-b868-43c3-af8a-36af77fb4b28}</UniqueIdentifier>
+      <UniqueIdentifier>{e056b44a-49c3-41af-923f-3706a6fd30f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\Module">
+      <UniqueIdentifier>{4944b656-0bc6-4b89-9179-8e654755d8f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionStyleChecker\StyleChecker">
+      <UniqueIdentifier>{3c48087f-c1c2-4135-b267-0f680a4b86df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\dllmain.cpp">
-      <Filter>HyperionStyleChecker</Filter>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\Main\DllMain.cpp">
+      <Filter>HyperionStyleChecker\Main</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\HyperionStyleChecker.cpp">
-      <Filter>HyperionStyleChecker</Filter>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParsedFile.cpp">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParser.cpp">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParseSourceTask.cpp">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnAccessQualifier.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnClassDef.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnFunctionDef.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnMemberFunctionDef.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnMemberVariableDef.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnVariableDef.cpp">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckFactory.cpp">
+      <Filter>HyperionStyleChecker\Check</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckSourceTask.cpp">
+      <Filter>HyperionStyleChecker\Check</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\Module\HyperionStyleCheckerModule.cpp">
+      <Filter>HyperionStyleChecker\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionStyleChecker\StyleChecker\StyleChecker.cpp">
+      <Filter>HyperionStyleChecker\StyleChecker</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\Source.h">
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParsedFile.h">
       <Filter>HyperionStyleChecker\DOM</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\ICheck.h">
-      <Filter>HyperionStyleChecker\Check\Checks</Filter>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParser.h">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\HnParseSourceTask.h">
+      <Filter>HyperionStyleChecker\DOM</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnAccessQualifier.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnClassDef.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnFunctionDef.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnMemberFunctionDef.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnMemberVariableDef.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\DOM\AST\HnVariableDef.h">
+      <Filter>HyperionStyleChecker\DOM\AST</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckFactory.h">
+      <Filter>HyperionStyleChecker\Check</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckResult.h">
       <Filter>HyperionStyleChecker\Check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckSourceResult.h">
+      <Filter>HyperionStyleChecker\Check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\CheckSourceTask.h">
+      <Filter>HyperionStyleChecker\Check</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\ICheck.h">
+      <Filter>HyperionStyleChecker\Check\Checks</Filter>
     </ClInclude>
     <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\BlockingChecks\ClassDeclarationGroupingCheck.hpp">
       <Filter>HyperionStyleChecker\Check\Checks\BlockingChecks</Filter>
@@ -79,6 +160,15 @@
     </ClInclude>
     <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Check\Checks\SpacingChecks\FunctionBracketsSpacingCheck.hpp">
       <Filter>HyperionStyleChecker\Check\Checks\SpacingChecks</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\Module\HyperionStyleCheckerModule.h">
+      <Filter>HyperionStyleChecker\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\StyleChecker\IStyleChecker.h">
+      <Filter>HyperionStyleChecker\StyleChecker</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionStyleChecker\StyleChecker\StyleChecker.h">
+      <Filter>HyperionStyleChecker\StyleChecker</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

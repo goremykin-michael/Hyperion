@@ -1,4 +1,5 @@
 #pragma once
+#include <Core/Common/HnIncludes.h>
 
 namespace HyperionStyleChecker
 {
@@ -8,9 +9,9 @@ namespace HyperionStyleChecker
 		CheckResult() {}
 		~CheckResult() {}
 
-		string sCheckName;
+		HnString sCheckName;
 
 		bool bIsOk;
-		string sWhat;
+		HnString sWhat;
 	};
 }

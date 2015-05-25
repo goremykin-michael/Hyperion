@@ -1,0 +1,515 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{B51740C6-F74D-4E7A-92E8-6146601CF63F}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>clangBasic</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\Debug\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">clangBasic.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">clangBasic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\Release\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">clangBasic.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">clangBasic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\MinSizeRel\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">clangBasic.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">clangBasic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\RelWithDebInfo\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">clangBasic.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">clangBasic</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/lib/Basic/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\lib\Basic\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\ABI.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\AddressSpaces.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\AllDiagnostics.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attributes.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\AttrKinds.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Builtins.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\CapturedStmt.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\CharInfo.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\CommentOptions.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Diagnostic.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticCategories.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticIDs.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticOptions.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\ExceptionSpecificationType.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\ExpressionTraits.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\FileManager.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\FileSystemOptions.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\FileSystemStatCache.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\IdentifierTable.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Lambda.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\LangOptions.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Linkage.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\LLVM.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\MacroBuilder.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Module.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\ObjCRuntime.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OpenMPKinds.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OperatorKinds.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OperatorPrecedence.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\PartialDiagnostic.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\PlistSupport.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\PrettyStackTrace.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\SanitizerBlacklist.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Sanitizers.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\SourceLocation.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\SourceManager.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\SourceManagerInternals.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Specifiers.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TargetBuiltins.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TargetCXXABI.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TargetInfo.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TargetOptions.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TemplateKinds.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TokenKinds.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TypeTraits.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Version.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\VersionTuple.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\VirtualFileSystem.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Visibility.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Builtins.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsAArch64.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsARM.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsHexagon.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsLe64.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsMips.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsNEON.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsNVPTX.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsPPC.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsR600.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsX86.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\BuiltinsXCore.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticOptions.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\LangOptions.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OpenCLExtensions.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OpenMPKinds.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\OperatorKinds.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Sanitizers.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\TokenKinds.def" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\arm_neon.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attr.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\AttrDocs.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\CommentNodes.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DeclNodes.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Diagnostic.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticAnalysisKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticASTKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticCategories.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticCommentKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticCommonKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticDriverKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticFrontendKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticGroups.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticLexKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticParseKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticSemaKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\DiagnosticSerializationKinds.td" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\StmtNodes.td" />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Attributes.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Builtins.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\CharInfo.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Diagnostic.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\DiagnosticIDs.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\FileManager.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\FileSystemStatCache.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\IdentifierTable.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\LangOptions.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Module.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\ObjCRuntime.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\OpenMPKinds.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\OperatorPrecedence.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\SanitizerBlacklist.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Sanitizers.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\SourceLocation.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\SourceManager.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\TargetInfo.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Targets.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\TokenKinds.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Version.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\VersionTuple.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\VirtualFileSystem.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Basic\Warnings.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangARMNeon.vcxproj">
+      <Project>66DF495E-A5D0-46BA-B04A-4AC3B398C4FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangAttrClasses.vcxproj">
+      <Project>5DA98D81-FFAB-4022-8C0F-2914F31756DA</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangAttrDump.vcxproj">
+      <Project>B1E1E571-1C9D-48C2-80D3-258A3835F20F</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangAttrHasAttributeImpl.vcxproj">
+      <Project>EBC47861-794F-48EA-B71A-FF01B971D41D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangAttrImpl.vcxproj">
+      <Project>6B3C70B9-90F5-4549-BEC2-D0B87DA35168</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangAttrList.vcxproj">
+      <Project>C4829199-4CF0-458F-A72E-B8029CC7D217</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/ClangAttrPCHRead.vcxproj">
+      <Project>2943260D-2DD5-48B2-A3C5-1C6B85C6B2E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/ClangAttrPCHWrite.vcxproj">
+      <Project>DD854331-2CBD-4186-8A8D-842FADD37D30</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Sema/ClangAttrParsedAttrImpl.vcxproj">
+      <Project>46AE822E-6989-47D5-8898-6A323EAFE378</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Sema/ClangAttrParsedAttrKinds.vcxproj">
+      <Project>319313D5-19B0-45A1-8138-5285E8BC3111</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Sema/ClangAttrParsedAttrList.vcxproj">
+      <Project>91390E45-5866-4AC1-B543-25386D87AAAC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Parse/ClangAttrParserStringSwitches.vcxproj">
+      <Project>38B68FAD-7622-4BE1-A8E7-3CF67F6E034A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Sema/ClangAttrSpellingListIndex.vcxproj">
+      <Project>18390B52-D6EF-473A-8D38-99B3C1AE4AE0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Sema/ClangAttrTemplateInstantiate.vcxproj">
+      <Project>25F66E79-889F-4D6F-A6B3-374E2FF2A822</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangAttrVisitor.vcxproj">
+      <Project>DBFE7987-CF77-400F-8711-56E685C8A60B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentCommandInfo.vcxproj">
+      <Project>FB2FD89A-F7D7-4808-BB1D-8172A5B16B0D</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentCommandList.vcxproj">
+      <Project>DE21E56A-F00E-41BE-B1D5-4C20844DC9A4</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentHTMLNamedCharacterReferences.vcxproj">
+      <Project>28972C38-A420-4C93-B95F-A699B981CBE5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentHTMLTags.vcxproj">
+      <Project>F438BE57-F17F-4C9F-B64E-2AF3FE545D86</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentHTMLTagsProperties.vcxproj">
+      <Project>EBB0FC5A-3C44-42D2-8671-BF81F2A6F527</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangCommentNodes.vcxproj">
+      <Project>967272F0-393F-4544-830A-554BF4BA67F6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangDeclNodes.vcxproj">
+      <Project>84E0B765-2CC3-4E2B-9E44-B2C600BF64FC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticAST.vcxproj">
+      <Project>AC139838-643B-40D1-8D68-4ED1240495A9</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticAnalysis.vcxproj">
+      <Project>59F3CF27-3D8C-4CD8-B3AB-5F232021C09A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticComment.vcxproj">
+      <Project>FF3AFB63-8FFC-4199-8249-B8EA5F2C1195</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticCommon.vcxproj">
+      <Project>43EF413E-A5AE-4F8E-AD07-13BAC342A1D3</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticDriver.vcxproj">
+      <Project>50A54555-747F-4EB5-B078-A0CF2ABE39B5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticFrontend.vcxproj">
+      <Project>4F8B10BB-68EB-4BFE-9213-A441EBA56A57</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticGroups.vcxproj">
+      <Project>1034B29C-1E8B-44C9-A8E9-A6E6B69803DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticIndexName.vcxproj">
+      <Project>11A7BC4C-DC1D-40EE-AA67-DD46CF56738A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticLex.vcxproj">
+      <Project>88D0E85E-FB92-4405-8CCD-13C83AD8FF74</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticParse.vcxproj">
+      <Project>36F5A406-733C-4BDB-9B6B-6FB25BCEED87</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticSema.vcxproj">
+      <Project>C090EC74-99B3-497D-A8CE-B450B6BEC3DF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/Basic/ClangDiagnosticSerialization.vcxproj">
+      <Project>63847651-17C9-4F33-A0FA-95B4F3D9D3AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/include/clang/AST/ClangStmtNodes.vcxproj">
+      <Project>B58FE157-B7D3-48A3-86FE-BE27A7CA4E91</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/ZERO_CHECK.vcxproj">
+      <Project>556210A6-DEDF-45F6-94C0-AD0E2B517C03</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

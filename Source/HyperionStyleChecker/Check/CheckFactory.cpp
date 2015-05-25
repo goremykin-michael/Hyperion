@@ -1,43 +1,43 @@
-#include <Checker/CPlusPlus/Check/HnCheckFactory.h>
+#include <HyperionStyleChecker/Check/CheckFactory.h>
 
-#include <Checker/CPlusPlus/Check/Checks/GroupingChecks/HnClassDeclarationGroupingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/GroupingChecks/HnDefineGroupingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/GroupingChecks/HnIncludeGroupingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/GroupingChecks/HnUsingGroupingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/BlockingChecks/ClassDeclarationGroupingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/BlockingChecks/DefineGroupingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/BlockingChecks/IncludeGroupingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/BlockingChecks/UsingGroupingCheck.hpp>
 
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnClassNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnFunctionNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnGlobalVariableNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnProtectedMemberVariableNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnPrivateMemberVariableNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnPublicMemberVariableNamingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/NamingChecks/HnMemberFunctionNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/ClassNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/FunctionNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/GlobalVariableNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/ProtectedMemberVariableNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/PrivateMemberVariableNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/PublicMemberVariableNamingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/NamingChecks/MemberFunctionNamingCheck.hpp>
 
-#include <Checker/CPlusPlus/Check/Checks/SpacingChecks/HnFunctionBracesSpacingCheck.hpp>
-#include <Checker/CPlusPlus/Check/Checks/SpacingChecks/HnFunctionBracketsSpacingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/SpacingChecks/FunctionBracesSpacingCheck.hpp>
+#include <HyperionStyleChecker/Check/Checks/SpacingChecks/FunctionBracketsSpacingCheck.hpp>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
-	void HnCheckFactory::CreateChecks(std::vector<HnICheck *> & rChecks)
+	void HnCheckFactory::CreateChecks(std::vector<ICheck *> & rChecks)
 	{
-		rChecks.push_back(new HnClassDeclarationGroupingCheck());
-		rChecks.push_back(new HnDefineGroupingCheck());
-		rChecks.push_back(new HnIncludeGroupingCheck());
-		rChecks.push_back(new HnUsingGroupingCheck());
+		rChecks.push_back(new ClassDeclarationGroupingCheck());
+		rChecks.push_back(new DefineGroupingCheck());
+		rChecks.push_back(new IncludeGroupingCheck());
+		rChecks.push_back(new UsingGroupingCheck());
 		
-		rChecks.push_back(new HnClassNamingCheck());
-		rChecks.push_back(new HnFunctionNamingCheck());
-		rChecks.push_back(new HnGlobalVariableNamingCheck());
-		rChecks.push_back(new HnProtectedMemberVariableNamingCheck());
-		rChecks.push_back(new HnPrivateMemberVariableNamingCheck());
-		rChecks.push_back(new HnPublicMemberVariableNamingCheck());
-		rChecks.push_back(new HnMemberFunctionNamingCheck());
+		rChecks.push_back(new ClassNamingCheck());
+		rChecks.push_back(new FunctionNamingCheck());
+		rChecks.push_back(new GlobalVariableNamingCheck());
+		rChecks.push_back(new ProtectedMemberVariableNamingCheck());
+		rChecks.push_back(new PrivateMemberVariableNamingCheck());
+		rChecks.push_back(new PublicMemberVariableNamingCheck());
+		rChecks.push_back(new MemberFunctionNamingCheck());
 		
-		rChecks.push_back(new HnFunctionBracesSpacingCheck());
-		rChecks.push_back(new HnFunctionBracketsSpacingCheck());
+		rChecks.push_back(new FunctionBracesSpacingCheck());
+		rChecks.push_back(new FunctionBracketsSpacingCheck());
 	}
 
-	void HnCheckFactory::FreeChecks(std::vector<HnICheck *> & rChecks)
+	void HnCheckFactory::FreeChecks(std::vector<ICheck *> & rChecks)
 	{
 		for(int i = 0; i < rChecks.size(); ++i)
 		{

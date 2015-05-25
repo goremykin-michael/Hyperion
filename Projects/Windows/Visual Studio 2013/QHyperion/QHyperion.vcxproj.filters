@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="HyperionCheckService">
+      <UniqueIdentifier>{451d5141-2601-4d1d-96cc-b371bf5e4f9a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionCheckService\Server">
+      <UniqueIdentifier>{ec702303-f21f-4267-b62e-f9c536a83c33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{d9c2a3c8-aef1-4fc9-a6f7-fe9456dae0c1}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{e2e9faf3-927d-4b06-b723-b7a72fb4d04a}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{32ed1739-d6ae-46df-8660-769b3580098a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Modules">
+      <UniqueIdentifier>{67d55491-335c-4dee-bc81-43099e05a630}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\Server\WebSocketServer.cpp">
+      <Filter>HyperionCheckService\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_WebSocketServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_WebSocketServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\LoadedModule.cpp">
+      <Filter>Core\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\ModuleManager.cpp">
+      <Filter>Core\Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\HyperionCheckService\Server\WebSocketServer.h">
+      <Filter>HyperionCheckService\Server</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModule.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModuleManager.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\LoadedModule.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\ModuleManager.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,285 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{97AE6002-A2D9-41D9-BD4C-310B8904AE9E}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>check-clang</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\Unit\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\Unit\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\Unit\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/test/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\Unit\lit.site.cfg.in;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\test\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\d84d400211c25c2cb73960fd17dccdd7\check-clang.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Running the Clang regression tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+C:\Python34\python.exe D:/Projects/llvm_3.61/RELEASE_361/rc1/utils/lit/lit.py -sv --no-progress-bar --param build_mode=$(Configuration) --param clang_site_config=D:/Projects/llvm_3.61.build/tools/clang/test/lit.site.cfg D:/Projects/llvm_3.61.build/tools/clang/test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/d84d400211c25c2cb73960fd17dccdd7/check-clang.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\check-clang</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Running the Clang regression tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+C:\Python34\python.exe D:/Projects/llvm_3.61/RELEASE_361/rc1/utils/lit/lit.py -sv --no-progress-bar --param build_mode=$(Configuration) --param clang_site_config=D:/Projects/llvm_3.61.build/tools/clang/test/lit.site.cfg D:/Projects/llvm_3.61.build/tools/clang/test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/d84d400211c25c2cb73960fd17dccdd7/check-clang.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\check-clang</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Running the Clang regression tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+C:\Python34\python.exe D:/Projects/llvm_3.61/RELEASE_361/rc1/utils/lit/lit.py -sv --no-progress-bar --param build_mode=$(Configuration) --param clang_site_config=D:/Projects/llvm_3.61.build/tools/clang/test/lit.site.cfg D:/Projects/llvm_3.61.build/tools/clang/test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/d84d400211c25c2cb73960fd17dccdd7/check-clang.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\check-clang</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Running the Clang regression tests</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+C:\Python34\python.exe D:/Projects/llvm_3.61/RELEASE_361/rc1/utils/lit/lit.py -sv --no-progress-bar --param build_mode=$(Configuration) --param clang_site_config=D:/Projects/llvm_3.61.build/tools/clang/test/lit.site.cfg D:/Projects/llvm_3.61.build/tools/clang/test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/d84d400211c25c2cb73960fd17dccdd7/check-clang.rule;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\check-clang</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\llvm_3.61.build\tools\clang\test\CMakeFiles\check-clang" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/unittests/ClangUnitTests.vcxproj">
+      <Project>6CF84087-D63D-4527-B18A-46D73C8494FF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/utils/FileCheck/FileCheck.vcxproj">
+      <Project>21818E7A-DDE7-48FB-B4FD-FC827F5AA4F8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/ZERO_CHECK.vcxproj">
+      <Project>556210A6-DEDF-45F6-94C0-AD0E2B517C03</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/arcmt-test/arcmt-test.vcxproj">
+      <Project>CC3CBB9D-7C83-40EB-B351-FDBF47763251</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/c-arcmt-test/c-arcmt-test.vcxproj">
+      <Project>F86251A5-E8BF-47AC-BBDB-B864518233C0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/c-index-test/c-index-test.vcxproj">
+      <Project>CB9533C7-0E77-4607-9074-68F880841D20</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/driver/clang.vcxproj">
+      <Project>3A1661C3-0A96-4230-AC15-9A9797A05322</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/clang-check/clang-check.vcxproj">
+      <Project>43661378-436E-4D44-8A5B-80E83BD9F2BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/clang-format/clang-format.vcxproj">
+      <Project>20D92E50-91CC-419A-B0EE-910B7AB53724</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/lib/Headers/clang-headers.vcxproj">
+      <Project>53BFE73D-C117-4E28-917E-02C35E234563</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/utils/TableGen/clang-tblgen.vcxproj">
+      <Project>89C45E07-6EF9-4130-8118-618173506851</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/utils/count/count.vcxproj">
+      <Project>AF4A2BDC-D197-4240-BB72-17FD4812F33A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/tools/diagtool/diagtool.vcxproj">
+      <Project>EE002DB3-09A4-4234-9AE0-CDC5BDC77095</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/llc/llc.vcxproj">
+      <Project>0293FB40-A9DE-4B63-8D04-699C90EFF792</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/llvm-config/llvm-config.vcxproj">
+      <Project>E2FFAF08-3F38-4295-90CF-6D9F806BE030</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/llvm-profdata/llvm-profdata.vcxproj">
+      <Project>8262F80F-1CC8-4691-BCF1-67A68BAC36F0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/llvm-symbolizer/llvm-symbolizer.vcxproj">
+      <Project>BE22B36B-6E46-49B1-80BC-1E767893F18B</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/utils/not/not.vcxproj">
+      <Project>71D311D7-3BB0-4C24-9B19-DC26568D6B22</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/opt/opt.vcxproj">
+      <Project>841A4461-06C0-4DAC-9604-4EE331CD23A0</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

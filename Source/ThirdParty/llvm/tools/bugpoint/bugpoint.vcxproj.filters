@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\BugDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CrashDebugger.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ExecutionDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ExtractFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\FindBugs.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\Miscompilation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\OptimizerDriver.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ToolRunner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\bugpoint.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\BugDriver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ListReducer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ToolRunner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{281BE4D7-1E4E-469B-8ED5-98757D8652BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EEFA4D05-C964-480A-991D-A9A484BE8E12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

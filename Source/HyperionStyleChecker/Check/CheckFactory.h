@@ -1,14 +1,14 @@
 #pragma once
 #include <Core/Common/HnIncludes.h>
-#include <Checker/CPlusPlus/Check/Checks/HnICheck.h>
+#include <HyperionStyleChecker/Check/Checks/ICheck.h>
 #include <vector>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
 	class HnCheckFactory
 	{
 	public:
-		static void CreateChecks(std::vector<HnICheck *> & rChecks);
-		static void FreeChecks(std::vector<HnICheck *> & rChecks);
+		static void CreateChecks(std::vector<ICheck *> & rChecks);
+		static void FreeChecks(std::vector<ICheck *> & rChecks);
 	};
 }

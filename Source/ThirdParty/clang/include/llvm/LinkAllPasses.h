@@ -86,7 +86,6 @@ namespace {
       (void) llvm::createGlobalsModRefPass();
       (void) llvm::createIPConstantPropagationPass();
       (void) llvm::createIPSCCPPass();
-      (void) llvm::createInductiveRangeCheckEliminationPass();
       (void) llvm::createIndVarSimplifyPass();
       (void) llvm::createInstructionCombiningPass();
       (void) llvm::createInternalizePass();
@@ -167,8 +166,6 @@ namespace {
       (void) llvm::createScalarizerPass();
       (void) llvm::createSeparateConstOffsetFromGEPPass();
       (void) llvm::createRewriteSymbolsPass();
-      (void) llvm::createStraightLineStrengthReducePass();
-      (void) llvm::createMemDerefPrinter();
 
       (void)new llvm::IntervalPartition();
       (void)new llvm::ScalarEvolution();

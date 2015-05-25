@@ -1,0 +1,445 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A56014CB-CE27-472D-9477-6E90590E792B}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>bugpoint</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\Debug\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bugpoint.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">bugpoint</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\Release\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bugpoint.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">bugpoint</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\MinSizeRel\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bugpoint.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">bugpoint</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\RelWithDebInfo\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bugpoint.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">bugpoint</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Debug\lib\LLVMAnalysis.lib;..\..\Debug\lib\LLVMBitWriter.lib;..\..\Debug\lib\LLVMCodeGen.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMipa.lib;..\..\Debug\lib\LLVMipo.lib;..\..\Debug\lib\LLVMIRReader.lib;..\..\Debug\lib\LLVMInstCombine.lib;..\..\Debug\lib\LLVMInstrumentation.lib;..\..\Debug\lib\LLVMLinker.lib;..\..\Debug\lib\LLVMObjCARCOpts.lib;..\..\Debug\lib\LLVMScalarOpts.lib;..\..\Debug\lib\LLVMSupport.lib;..\..\Debug\lib\LLVMTarget.lib;..\..\Debug\lib\LLVMTransformUtils.lib;..\..\Debug\lib\LLVMVectorize.lib;..\..\Debug\lib\LLVMInstCombine.lib;..\..\Debug\lib\LLVMProfileData.lib;..\..\Debug\lib\LLVMObject.lib;..\..\Debug\lib\LLVMMCParser.lib;..\..\Debug\lib\LLVMAsmParser.lib;..\..\Debug\lib\LLVMBitReader.lib;..\..\Debug\lib\LLVMTransformUtils.lib;..\..\Debug\lib\LLVMipa.lib;..\..\Debug\lib\LLVMAnalysis.lib;..\..\Debug\lib\LLVMTarget.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/llvm_3.61.build/Debug/lib/bugpoint.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/llvm_3.61.build/Debug/bin/bugpoint.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Release\lib\LLVMAnalysis.lib;..\..\Release\lib\LLVMBitWriter.lib;..\..\Release\lib\LLVMCodeGen.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMipa.lib;..\..\Release\lib\LLVMipo.lib;..\..\Release\lib\LLVMIRReader.lib;..\..\Release\lib\LLVMInstCombine.lib;..\..\Release\lib\LLVMInstrumentation.lib;..\..\Release\lib\LLVMLinker.lib;..\..\Release\lib\LLVMObjCARCOpts.lib;..\..\Release\lib\LLVMScalarOpts.lib;..\..\Release\lib\LLVMSupport.lib;..\..\Release\lib\LLVMTarget.lib;..\..\Release\lib\LLVMTransformUtils.lib;..\..\Release\lib\LLVMVectorize.lib;..\..\Release\lib\LLVMInstCombine.lib;..\..\Release\lib\LLVMProfileData.lib;..\..\Release\lib\LLVMObject.lib;..\..\Release\lib\LLVMMCParser.lib;..\..\Release\lib\LLVMAsmParser.lib;..\..\Release\lib\LLVMBitReader.lib;..\..\Release\lib\LLVMTransformUtils.lib;..\..\Release\lib\LLVMipa.lib;..\..\Release\lib\LLVMAnalysis.lib;..\..\Release\lib\LLVMTarget.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/llvm_3.61.build/Release/lib/bugpoint.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/llvm_3.61.build/Release/bin/bugpoint.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\MinSizeRel\lib\LLVMAnalysis.lib;..\..\MinSizeRel\lib\LLVMBitWriter.lib;..\..\MinSizeRel\lib\LLVMCodeGen.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMipa.lib;..\..\MinSizeRel\lib\LLVMipo.lib;..\..\MinSizeRel\lib\LLVMIRReader.lib;..\..\MinSizeRel\lib\LLVMInstCombine.lib;..\..\MinSizeRel\lib\LLVMInstrumentation.lib;..\..\MinSizeRel\lib\LLVMLinker.lib;..\..\MinSizeRel\lib\LLVMObjCARCOpts.lib;..\..\MinSizeRel\lib\LLVMScalarOpts.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\MinSizeRel\lib\LLVMTransformUtils.lib;..\..\MinSizeRel\lib\LLVMVectorize.lib;..\..\MinSizeRel\lib\LLVMInstCombine.lib;..\..\MinSizeRel\lib\LLVMProfileData.lib;..\..\MinSizeRel\lib\LLVMObject.lib;..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\MinSizeRel\lib\LLVMAsmParser.lib;..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\MinSizeRel\lib\LLVMTransformUtils.lib;..\..\MinSizeRel\lib\LLVMipa.lib;..\..\MinSizeRel\lib\LLVMAnalysis.lib;..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/llvm_3.61.build/MinSizeRel/lib/bugpoint.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/llvm_3.61.build/MinSizeRel/bin/bugpoint.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalOptions> /EHs-c- -w14062 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <MASM>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <IncludePaths>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(IncludePaths)</IncludePaths>
+    </MASM>
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\bugpoint;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:x64 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\RelWithDebInfo\lib\LLVMAnalysis.lib;..\..\RelWithDebInfo\lib\LLVMBitWriter.lib;..\..\RelWithDebInfo\lib\LLVMCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMipa.lib;..\..\RelWithDebInfo\lib\LLVMipo.lib;..\..\RelWithDebInfo\lib\LLVMIRReader.lib;..\..\RelWithDebInfo\lib\LLVMInstCombine.lib;..\..\RelWithDebInfo\lib\LLVMInstrumentation.lib;..\..\RelWithDebInfo\lib\LLVMLinker.lib;..\..\RelWithDebInfo\lib\LLVMObjCARCOpts.lib;..\..\RelWithDebInfo\lib\LLVMScalarOpts.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\RelWithDebInfo\lib\LLVMTransformUtils.lib;..\..\RelWithDebInfo\lib\LLVMVectorize.lib;..\..\RelWithDebInfo\lib\LLVMInstCombine.lib;..\..\RelWithDebInfo\lib\LLVMProfileData.lib;..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\RelWithDebInfo\lib\LLVMAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\RelWithDebInfo\lib\LLVMTransformUtils.lib;..\..\RelWithDebInfo\lib\LLVMipa.lib;..\..\RelWithDebInfo\lib\LLVMAnalysis.lib;..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>D:/Projects/llvm_3.61.build/RelWithDebInfo/lib/bugpoint.lib</ImportLibrary>
+      <ProgramDataBaseFile>D:/Projects/llvm_3.61.build/RelWithDebInfo/bin/bugpoint.pdb</ProgramDataBaseFile>
+      <StackReserveSize>10000000</StackReserveSize>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/bugpoint/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\bugpoint\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\BugDriver.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ListReducer.h" />
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ToolRunner.h" />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\BugDriver.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\CrashDebugger.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ExecutionDriver.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ExtractFunction.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\FindBugs.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\Miscompilation.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\OptimizerDriver.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\ToolRunner.cpp"  />
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\bugpoint\bugpoint.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Analysis/LLVMAnalysis.vcxproj">
+      <Project>C5AAF056-953D-4AFC-9197-47E83A260026</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/AsmParser/LLVMAsmParser.vcxproj">
+      <Project>0CF4CA9E-7BB0-45FA-9DA0-28FC90E5DABE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Bitcode/Reader/LLVMBitReader.vcxproj">
+      <Project>A18A3786-40C6-480B-BFDB-62435280A3E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Bitcode/Writer/LLVMBitWriter.vcxproj">
+      <Project>FC40BBFC-3963-4CFF-B465-E4285AB511BF</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/CodeGen/LLVMCodeGen.vcxproj">
+      <Project>6749F5FA-01CB-46B1-8367-28AD1F43E97A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/IR/LLVMCore.vcxproj">
+      <Project>E6C6DECB-8CC6-4FE3-8380-A2BE2FB394DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/IRReader/LLVMIRReader.vcxproj">
+      <Project>CBD96B8E-60BF-4384-BA53-3AA3D1D17BEB</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/InstCombine/LLVMInstCombine.vcxproj">
+      <Project>AE54BB7D-BFD1-481A-A621-58F68B01B1B8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/Instrumentation/LLVMInstrumentation.vcxproj">
+      <Project>385A2B0F-CC9E-4BA0-9633-BE01D5C8751A</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Linker/LLVMLinker.vcxproj">
+      <Project>2A62E6C1-861C-4523-9829-9B7528B6D273</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/MC/LLVMMC.vcxproj">
+      <Project>830F7D6D-6069-46CB-AA69-0848B2AAFBEC</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/MC/MCParser/LLVMMCParser.vcxproj">
+      <Project>EAAB2455-E482-4DD3-9C66-2FDDE5D0C05E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/ObjCARC/LLVMObjCARCOpts.vcxproj">
+      <Project>FF3117C3-ACED-48A5-9639-BACE0A1AD995</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Object/LLVMObject.vcxproj">
+      <Project>E65499A5-1525-4DE9-8B67-0846EB23F8E8</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/ProfileData/LLVMProfileData.vcxproj">
+      <Project>008DB44A-DBBC-46A6-B783-958E2C48673E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/Scalar/LLVMScalarOpts.vcxproj">
+      <Project>86B1BBBE-AB34-4E36-AED5-1D3B95EBD0E6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Support/LLVMSupport.vcxproj">
+      <Project>9509DD19-6F62-4BAC-B90F-52DDBF0E2FBE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Target/LLVMTarget.vcxproj">
+      <Project>0B97A00C-1413-4006-BDAA-5745E0F20FA5</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/Utils/LLVMTransformUtils.vcxproj">
+      <Project>F3969B67-654B-41A8-80A3-5964A4B12DEE</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/Vectorize/LLVMVectorize.vcxproj">
+      <Project>FD7FDA78-5D63-41B2-B340-CB65EAB4AAA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Analysis/IPA/LLVMipa.vcxproj">
+      <Project>219234C4-7FAD-46BA-865D-C5B01CED6D6E</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/lib/Transforms/IPO/LLVMipo.vcxproj">
+      <Project>CE6576AC-BC6D-445C-A723-07B8E49CE7D6</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/ZERO_CHECK.vcxproj">
+      <Project>556210A6-DEDF-45F6-94C0-AD0E2B517C03</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

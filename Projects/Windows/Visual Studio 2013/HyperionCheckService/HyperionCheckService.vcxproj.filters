@@ -1,16 +1,103 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\dllmain.cpp">
-      <Filter>HyperionCheckService</Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;cxx;c;def</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="HyperionCheckService">
+      <UniqueIdentifier>{80df4cd8-862c-4a6a-88ee-6a261c30a4c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionCheckService\Module">
+      <UniqueIdentifier>{f77279dd-adab-45c8-8de9-b2a92e9be1c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionCheckService\Service">
+      <UniqueIdentifier>{d65f172a-a3b3-4ebd-9e45-9e511e9268ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="HyperionCheckService\Server">
+      <UniqueIdentifier>{ca263929-e3bd-4c3d-bb20-abef6d7b5fc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{06a169ac-6f95-4321-8b09-29bd39b341a7}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{630f27a1-d23f-4679-b48a-4dea3712ae1b}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{68ba107b-cbaa-4265-8abf-870c7283a9a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common\Threading">
+      <UniqueIdentifier>{974d6c0e-b140-4003-a43b-bcbd3ac46bd9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HyperionCheckService.cpp">
+      <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\HyperionCheckService.cpp">
-      <Filter>HyperionCheckService</Filter>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\Service\CheckService.cpp">
+      <Filter>HyperionCheckService\Service</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\Module\CheckServiceModule.cpp">
+      <Filter>HyperionCheckService\Module</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\HyperionCheckService\Server\WebSocketServer.cpp">
+      <Filter>HyperionCheckService\Server</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_WebSocketServer.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_WebSocketServer.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Core\Threading\Thread.cpp">
+      <Filter>Common\Threading</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="HyperionCheckService">
-      <UniqueIdentifier>{aeb42e32-afcd-4f82-9044-bd24440378a3}</UniqueIdentifier>
-    </Filter>
+    <ClInclude Include="HyperionCheckService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="hyperioncheckservice_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionCheckService\Service\CheckService.h">
+      <Filter>HyperionCheckService\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionCheckService\Service\ICheckService.h">
+      <Filter>HyperionCheckService\Service</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\HyperionCheckService\Module\CheckServiceModule.h">
+      <Filter>HyperionCheckService\Module</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Threading\Thread.h">
+      <Filter>Common\Threading</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\..\Source\HyperionCheckService\Server\WebSocketServer.h">
+      <Filter>HyperionCheckService\Server</Filter>
+    </CustomBuild>
   </ItemGroup>
 </Project>

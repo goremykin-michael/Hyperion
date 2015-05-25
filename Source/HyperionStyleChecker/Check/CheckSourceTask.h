@@ -1,22 +1,22 @@
 #pragma once
 #include <Core/Common/HnIncludes.h>
 #include <Core/Text/HnString.h>
-#include <Checker/CPlusPlus/Check/HnCheckFileResult.h>
-#include <Checker/CPlusPlus/Source/HnParsedFile.h>
+#include <HyperionStyleChecker/Check/CheckResult.h>
+#include <HyperionStyleChecker/DOM/HnParsedFile.h>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
 	class HnCheckFileTask
 	{
 	public:
 		HnCheckFileTask();
-		HnCheckFileTask(const HnParsedFile * cpParsedFile, HnCheckFileResult * pCheckFileResult);
+		HnCheckFileTask(const HnParsedFile * cpParsedFile, CheckResult * pCheckFileResult);
 		~HnCheckFileTask();
 
 		void operator()() const;
 
 	protected:
 		const HnParsedFile * _cpParsedFile;
-		HnCheckFileResult * _pCheckFileResult;
+		CheckResult * _pCheckFileResult;
 	};
 }

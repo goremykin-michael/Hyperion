@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\AST\CMakeLists.txt" />
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\51f91bf702c78cedb1a6e7666d1d5d19\AttrVisitor.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\51f91bf702c78cedb1a6e7666d1d5d19\AttrVisitor.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\b57f1802a18d27a3ae2db6eb3cb3bde8\ClangAttrVisitor.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\llvm_3.61.build\tools\clang\include\clang\AST\CMakeFiles\ClangAttrVisitor" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A2337DFD-3F11-4B6E-95CF-94B059A3CF37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

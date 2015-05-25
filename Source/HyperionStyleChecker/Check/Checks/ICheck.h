@@ -1,6 +1,7 @@
 #pragma once
 #include <HyperionStyleChecker/DOM/Source.h>
 #include <HyperionStyleChecker/Check/CheckResult.h>
+#include <HyperionStyleChecker/DOM/HnParsedFile.h>
 
 namespace HyperionStyleChecker
 {
@@ -9,7 +10,8 @@ namespace HyperionStyleChecker
 	public:
 		virtual ~ICheck() {}
 
-		virtual CheckResult Check(const Source & crSource) = 0;
+		virtual HnString GetName() = 0;
+		virtual CheckResult Check(const HnParsedFile * cpParsedFile) = 0;
 	};
 
 	//class LineCharacterLengthCheck : ICheck
@@ -85,42 +87,42 @@ namespace HyperionStyleChecker
 	//	}
 	//};
 	
-	class FunctionCallLengthCheck : ICheck
-	{
-	public:
-		CheckResult Check(const Source & crSource) override
-		{
-			CheckResult checkResult;
+	//class FunctionCallLengthCheck : ICheck
+	//{
+	//public:
+	//	CheckResult Check(const Source & crSource) override
+	//	{
+	//		CheckResult checkResult;
 
-			for each (Atom atom in crSource.GetFunctionCalls())
-			{
-				vector<Atom> functionParameters = atom.AST<FunctionCall>().GetParameters();
+	//		for each (Atom atom in crSource.GetFunctionCalls())
+	//		{
+	//			vector<Atom> functionParameters = atom.AST<FunctionCall>().GetParameters();
 
-				if (functionParameters.size() > 1 &&
-					(functionParameters[0].block.GetLeftUpperPosition().row ==
-					functionParameters[functionParameters.size() - 1].block.GetRightBottomPosition().row))
-				{
-					unsigned int uiFunctionCallLength = 0;
+	//			if (functionParameters.size() > 1 &&
+	//				(functionParameters[0].block.GetLeftUpperPosition().row ==
+	//				functionParameters[functionParameters.size() - 1].block.GetRightBottomPosition().row))
+	//			{
+	//				unsigned int uiFunctionCallLength = 0;
 
-					for each(Atom parameterAtom in functionParameters)
-					{
-						uiFunctionCallLength += parameterAtom.symbols.Length();
-					}
+	//				for each(Atom parameterAtom in functionParameters)
+	//				{
+	//					uiFunctionCallLength += parameterAtom.symbols.Length();
+	//				}
 
-					if (uiFunctionCallLength > _uiMaxFunctionCallLength)
-					{
-						checkResult.sWhat.append(Text::Format("Строка с вызовом функции {0} слишком длинная ({1}:{2}).\n",
-								                              atom.AST<FunctionCall>().GetName(),
-															  crSource.GetName(),
-															  atom.block.GetLeftUpperPosition().row));
-					}
-				}
-			}
+	//				if (uiFunctionCallLength > _uiMaxFunctionCallLength)
+	//				{
+	//					checkResult.sWhat.append(Text::Format("Строка с вызовом функции {0} слишком длинная ({1}:{2}).\n",
+	//							                              atom.AST<FunctionCall>().GetName(),
+	//														  crSource.GetName(),
+	//														  atom.block.GetLeftUpperPosition().row));
+	//				}
+	//			}
+	//		}
 
-			return checkResult;
-		}
+	//		return checkResult;
+	//	}
 
-	private:
-		const unsigned int _uiMaxFunctionCallLength = 150;
-	};
+	//private:
+	//	const unsigned int _uiMaxFunctionCallLength = 150;
+	//};
 }

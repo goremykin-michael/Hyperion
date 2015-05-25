@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Headers\CMakeLists.txt" />
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\adxintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\altivec.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\ammintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\arm_acle.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx2intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx512bwintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx512erintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx512fintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx512vlbwintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avx512vlintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\avxintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\bmi2intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\bmiintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\cpuid.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\emmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\f16cintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\float.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\fma4intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\fmaintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\ia32intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\immintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\Intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\iso646.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\limits.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\lzcntintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\mm3dnow.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\mmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\mm_malloc.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\module.modulemap.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\nmmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\pmmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\popcntintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\prfchwintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\rdseedintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\rtmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\shaintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\smmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdalign.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdarg.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdatomic.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdbool.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stddef.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\__stddef_max_align_t.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdint.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\stdnoreturn.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\tbmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\tgmath.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\tmmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\unwind.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\vadefs.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\varargs.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\__wmmintrin_aes.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\wmmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\__wmmintrin_pclmul.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\x86intrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\xmmintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\xopintrin.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\4c1bacdb8c984e1514487748887abcc3\arm_neon.h.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\4c1bacdb8c984e1514487748887abcc3\arm_neon.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\df1f449e939d0771e88b851f74c5e202\arm_neon.h.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\46306ba84ad798b51aaf1eb1e9c31e6d\clang-headers.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\llvm_3.61.build\tools\clang\lib\Headers\CMakeFiles\clang-headers" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A2337DFD-3F11-4B6E-95CF-94B059A3CF37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,338 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{2943260D-2DD5-48B2-A3C5-1C6B85C6B2E4}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>ClangAttrPCHRead</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include;D:\Projects\llvm_3.61.build\tools\clang\include;D:\Projects\llvm_3.61.build\include;D:\Projects\llvm_3.61\RELEASE_361\rc1\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -HD:/Projects/llvm_3.61/RELEASE_361/rc1 -BD:/Projects/llvm_3.61.build --check-stamp-file D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Serialization\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\b61a06fdd754cf9ffb6fc4bbb4238ee2\AttrPCHRead.inc.tmp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+..\..\..\..\..\Debug\bin\clang-tblgen.exe -gen-clang-attr-pch-read -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../../ -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization -I D:/Projects/llvm_3.61/RELEASE_361/rc1/lib/Target -I D:/Projects/llvm_3.61/RELEASE_361/rc1/include D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../Basic/Attr.td -o D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.tmp.rule;D:\Projects\llvm_3.61.build\Debug\bin\clang-tblgen.exe;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\CodeGen\ValueTypes.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\Intrinsics.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsAArch64.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsARM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsHexagon.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsMips.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsNVVM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsPowerPC.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsR600.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsX86.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsXCore.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Option\OptParser.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\Target.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetCallingConv.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetItinerary.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSchedule.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSelectionDAG.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attr.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+..\..\..\..\..\Release\bin\clang-tblgen.exe -gen-clang-attr-pch-read -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../../ -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization -I D:/Projects/llvm_3.61/RELEASE_361/rc1/lib/Target -I D:/Projects/llvm_3.61/RELEASE_361/rc1/include D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../Basic/Attr.td -o D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.tmp.rule;D:\Projects\llvm_3.61.build\Release\bin\clang-tblgen.exe;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\CodeGen\ValueTypes.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\Intrinsics.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsAArch64.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsARM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsHexagon.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsMips.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsNVVM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsPowerPC.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsR600.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsX86.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsXCore.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Option\OptParser.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\Target.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetCallingConv.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetItinerary.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSchedule.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSelectionDAG.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attr.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+..\..\..\..\..\MinSizeRel\bin\clang-tblgen.exe -gen-clang-attr-pch-read -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../../ -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization -I D:/Projects/llvm_3.61/RELEASE_361/rc1/lib/Target -I D:/Projects/llvm_3.61/RELEASE_361/rc1/include D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../Basic/Attr.td -o D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.tmp.rule;D:\Projects\llvm_3.61.build\MinSizeRel\bin\clang-tblgen.exe;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\CodeGen\ValueTypes.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\Intrinsics.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsAArch64.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsARM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsHexagon.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsMips.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsNVVM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsPowerPC.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsR600.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsX86.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsXCore.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Option\OptParser.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\Target.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetCallingConv.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetItinerary.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSchedule.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSelectionDAG.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attr.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+..\..\..\..\..\RelWithDebInfo\bin\clang-tblgen.exe -gen-clang-attr-pch-read -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../../ -I D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization -I D:/Projects/llvm_3.61/RELEASE_361/rc1/lib/Target -I D:/Projects/llvm_3.61/RELEASE_361/rc1/include D:/Projects/llvm_3.61/RELEASE_361/rc1/tools/clang/include/clang/Serialization/../Basic/Attr.td -o D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.tmp.rule;D:\Projects\llvm_3.61.build\RelWithDebInfo\bin\clang-tblgen.exe;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\CodeGen\ValueTypes.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\Intrinsics.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsAArch64.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsARM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsHexagon.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsMips.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsNVVM.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsPowerPC.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsR600.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsX86.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\IR\IntrinsicsXCore.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Option\OptParser.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\Target.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetCallingConv.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetItinerary.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSchedule.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\include\llvm\Target\TargetSelectionDAG.td;D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Basic\Attr.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\b61a06fdd754cf9ffb6fc4bbb4238ee2\AttrPCHRead.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Updating AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Updating AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Updating AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Updating AttrPCHRead.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc.tmp D:/Projects/llvm_3.61.build/tools/clang/include/clang/Serialization/AttrPCHRead.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/b61a06fdd754cf9ffb6fc4bbb4238ee2/AttrPCHRead.inc.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\137c7feca9ce45055d19528f5768ca38\ClangAttrPCHRead.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/137c7feca9ce45055d19528f5768ca38/ClangAttrPCHRead.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\ClangAttrPCHRead</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/137c7feca9ce45055d19528f5768ca38/ClangAttrPCHRead.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\ClangAttrPCHRead</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/137c7feca9ce45055d19528f5768ca38/ClangAttrPCHRead.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\ClangAttrPCHRead</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:/Projects/llvm_3.61.build/CMakeFiles/137c7feca9ce45055d19528f5768ca38/ClangAttrPCHRead.rule;D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\AttrPCHRead.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\ClangAttrPCHRead</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\llvm_3.61.build\tools\clang\include\clang\Serialization\CMakeFiles\ClangAttrPCHRead" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/ZERO_CHECK.vcxproj">
+      <Project>556210A6-DEDF-45F6-94C0-AD0E2B517C03</Project>
+    </ProjectReference>
+    <ProjectReference Include="D:/Projects/llvm_3.61.build/tools/clang/utils/TableGen/clang-tblgen.vcxproj">
+      <Project>89C45E07-6EF9-4130-8118-618173506851</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

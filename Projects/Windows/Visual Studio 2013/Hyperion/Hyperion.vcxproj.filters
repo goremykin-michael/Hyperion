@@ -4,10 +4,36 @@
     <Filter Include="Hyperion">
       <UniqueIdentifier>{9f6ebd65-34cc-47e2-9a23-723a1bf8dbe3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{35c9d975-51db-4fcd-8a48-362debbaa74d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Core\Modules">
+      <UniqueIdentifier>{9406dc4c-a4aa-4b96-9704-8f7bb9bfe272}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\..\Source\Hyperion\Hyperion.cpp">
       <Filter>Hyperion</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\LoadedModule.cpp">
+      <Filter>Core\Modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Source\Core\Modules\ModuleManager.cpp">
+      <Filter>Core\Modules</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModule.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\IModuleManager.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\LoadedModule.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Source\Core\Modules\ModuleManager.h">
+      <Filter>Core\Modules</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

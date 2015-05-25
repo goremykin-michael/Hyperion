@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\llvm-ar\CMakeLists.txt" />
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\d08ff3c60c8358e4edc2b87c8a421d18\llvm-ranlib.exe.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\Projects\llvm_3.61.build\CMakeFiles\d751a049a83d7882a6d1975ec0d6b43e\llvm-ranlib.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Projects\llvm_3.61.build\tools\llvm-ar\CMakeFiles\llvm-ranlib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{A2337DFD-3F11-4B6E-95CF-94B059A3CF37}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

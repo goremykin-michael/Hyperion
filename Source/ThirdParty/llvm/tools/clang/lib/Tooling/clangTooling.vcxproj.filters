@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="Windows-1252"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\ArgumentsAdjusters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\CommonOptionsParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\CompilationDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\FileMatchTrie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\JSONCompilationDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\Refactoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\RefactoringCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\Tooling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\ArgumentsAdjusters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\CommonOptionsParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\CompilationDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\CompilationDatabasePluginRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\Core\Replacement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\FileMatchTrie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\JSONCompilationDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\Refactoring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\RefactoringCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\ReplacementsYaml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\include\clang\Tooling\Tooling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\Projects\llvm_3.61\RELEASE_361\rc1\tools\clang\lib\Tooling\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{281BE4D7-1E4E-469B-8ED5-98757D8652BC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{EEFA4D05-C964-480A-991D-A9A484BE8E12}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

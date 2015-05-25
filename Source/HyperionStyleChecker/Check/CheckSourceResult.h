@@ -4,7 +4,7 @@
 #include <Checker/CPlusPlus/Check/HnCheckResult.h>
 #include <vector>
 
-namespace Hyperion
+namespace HyperionStyleChecker
 {
 	class HnCheckFileResult
 	{

@@ -1,4 +1,6 @@
 #pragma once
+#include <Core/Common/HnIncludes.h>
+#include <HyperionStyleChecker/DOM/HnParsedFile.h>
 
 namespace HyperionStyleChecker
 {
@@ -8,12 +10,12 @@ namespace HyperionStyleChecker
 		PublicMemberVariableNamingCheck() {}
 		virtual ~PublicMemberVariableNamingCheck() {}
 
-		virtual String GetName()
+		virtual HnString GetName()
 		{
 			return "Public Member Variable Naming Check";
 		};
 
-		virtual CheckResult Check(const ParsedFile * cpParsedFile)
+		virtual CheckResult Check(const HnParsedFile * cpParsedFile)
 		{
 			CheckResult checkResult;
 			checkResult.sCheckName = GetName();

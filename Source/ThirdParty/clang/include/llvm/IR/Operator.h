@@ -504,20 +504,6 @@ public:
   }
 };
 
-class BitCastOperator
-    : public ConcreteOperator<Operator, Instruction::BitCast> {
-  friend class BitCastInst;
-  friend class ConstantExpr;
-
-public:
-  Type *getSrcTy() const {
-    return getOperand(0)->getType();
-  }
-
-  Type *getDestTy() const {
-    return getType();
-  }
-};
 
 } // End llvm namespace
 
