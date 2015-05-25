@@ -1,18 +1,18 @@
 #pragma once
 #include <Core/Common/HnIncludes.h>
 #include <Core/Text/HnString.h>
-#include <Checker/CPlusPlus/Check/HnCheckResult.h>
+#include <HyperionStyleChecker/Check/CheckResult.h>
 #include <vector>
 
 namespace HyperionStyleChecker
 {
-	class HnCheckFileResult
+	class CheckSourceResult
 	{
 	public:
-		HnCheckFileResult() {}
-		~HnCheckFileResult() {}
+		CheckSourceResult() {}
+		~CheckSourceResult() {}
 
 		HnString sParsedFilePath;
-		std::vector<HnCheckResult> checkResults;
+		std::vector<CheckResult> checkResults;
 	};
 }

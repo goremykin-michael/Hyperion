@@ -4,36 +4,36 @@
 
 namespace HyperionStyleChecker
 {
-	HnCheckFileTask::HnCheckFileTask() :
-		_cpParsedFile(HnNullPointer), _pCheckFileResult(HnNullPointer)
+	CheckSourceTask::CheckSourceTask() :
+		_cpParsedFile(HnNullPointer), _pCheckSourceResult(HnNullPointer)
 	{
 	}
 
-	HnCheckFileTask::HnCheckFileTask(const HnParsedFile * cpParsedFile, CheckResult * pCheckFileResult)
+	CheckSourceTask::CheckSourceTask(const HnParsedFile * cpParsedFile, CheckSourceResult * pCheckSourceResult)
 	{
 		_cpParsedFile = cpParsedFile;
-		_pCheckFileResult = pCheckFileResult;
+		_pCheckSourceResult = pCheckSourceResult;
 	}
 
-	HnCheckFileTask::~HnCheckFileTask()
+	CheckSourceTask::~CheckSourceTask()
 	{
 	}
 
-	void HnCheckFileTask::operator()() const
+	void CheckSourceTask::operator()() const
 	{
-		//_pCheckFileResult->sParsedFilePath = _cpParsedFile->sFilePath;
+		_pCheckSourceResult->sParsedFilePath = _cpParsedFile->sFilePath;
 
-		//// Create checks.
-		//std::vector<ICheck *> checks;
-		//HnCheckFactory::CreateChecks(checks);
+		// Create checks.
+		std::vector<ICheck *> checks;
+		HnCheckFactory::CreateChecks(checks);
 
-		//// Apply the checks.
-		//for(int i = 0; i < checks.size(); ++i)
-		//{
-		//	_pCheckFileResult->checkResults.push_back(checks[i]->Check(_cpParsedFile));
-		//}
+		// Apply the checks.
+		for(int i = 0; i < checks.size(); ++i)
+		{
+			_pCheckSourceResult->checkResults.push_back(checks[i]->Check(_cpParsedFile));
+		}
 
-		//// Free checks.
-		//HnCheckFactory::FreeChecks(checks);
+		// Free checks.
+		HnCheckFactory::FreeChecks(checks);
 	}
 }

@@ -12,6 +12,6 @@ namespace HyperionStyleChecker
 		HnParser();
 		~HnParser();
 
-		static void ParseSourceFromDirectory(const HnString & crDirectory, std::vector<HnParsedFile> & rParsedFiles);
+		static void ParseSources(const std::vector<HnString> & crSourceFilePathes, std::vector<HnParsedFile> & rParsedFiles);
 	};
 }

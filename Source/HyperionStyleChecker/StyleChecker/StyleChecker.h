@@ -6,6 +6,6 @@ namespace HyperionStyleChecker
 	class StyleChecker : IStyleChecker
 	{
 	public:
-		virtual void Test();
+		virtual void CheckFiles(const std::vector<HnString> & crSourceFilePathes, std::vector<CheckSourceResult> & rCheckSourceResults);
 	};
 }

@@ -1,5 +1,6 @@
 #include <QtCore/QCoreApplication>
 #include <Core/Modules/ModuleManager.h>
+#include <Core/Text/HnString.h>
 #include <HyperionCheckService/Server/WebSocketServer.h>
 #include <HyperionStyleChecker/StyleChecker/IStyleChecker.h>
 
@@ -17,7 +18,15 @@ int main(int argc, char *argv[])
 
 		if (pStyleChecker != nullptr)
 		{
-			pStyleChecker->Test();
+			std::vector<CheckSourceResult> checkSourceResults;
+			std::vector<HnString> fileNames{ HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\Quest.cpp"),
+											 HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\Quest.h"),
+											 HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\QuestFactory.hpp"),
+											 HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\QuestIDs.h"),
+											 HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\QuestManager.cpp"),
+											 HnString("D:\\Projects\\Hyperion\\Content\\code-samples\\c++\\QuestSystem\\QuestManager.h") };
+
+			pStyleChecker->CheckFiles(fileNames, checkSourceResults);
 		}
 	}
 
